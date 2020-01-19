@@ -1,0 +1,1 @@
+# QR_based_inventory_management
