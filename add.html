@@ -1,0 +1,68 @@
+<html> 
+
+        <head>
+                <title>
+                        Rep-Air
+                </title>
+
+                <style>
+                        
+                       
+                         
+                        #button{
+                                border-radius:50px;
+                                width:160px;
+                                height:50px;
+                                background:#3e78a8;
+                                font-weight:bold;
+                                font-size:25px;
+                                text-align: center;
+                                margin-top: 10px;
+                        }
+                        div{
+                                color:#4a89bc;
+                                font-size: 25px;
+                        }
+                        input{
+                                font-size: 20px;
+                                text-align: left;
+                        }
+                        #main{
+                                text-align: center;
+                                margin-top: 30%;
+                                width : 100%;
+                                position: absolute;
+                                padding-top: 70px;
+                                padding-bottom: 70px ;
+                                padding-left: 30px;
+                                padding-right: 30px;                                
+                                background-color:white;
+                                box-shadow: 0px 20px 30px grey;
+                        }
+                        .bg {
+                                background-image: url("background.png");
+                                width: 100%;
+                                background-repeat: no-repeat;
+                                background-attachment: fixed;
+                                background-size: 100% 100%;
+                                position: relative;
+                        }
+                </style>
+                
+        </head>
+    
+    <body class = "bg">
+    <div id = "main">
+    
+    <form  method="POST" action="qr.php" style="align-items: center;align-content: center;">
+        <table>
+        <tr><td><div>S.NO:</div></td><td><input type="text" placeholder="S.NO" name="sno" /></td></tr>
+        <tr><td><div>Name:</div></td><td><input type="text" placeholder="Name" name="name" /></td></tr>
+        <tr><td><div>Date of commision:</div></td><td><input style = "width:100%" type="date" placeholder="date of commision" name="doc" /></td></tr>
+        <tr><td><div>Department:</div></td><td><input type="text" placeholder="department" name="dep" /></td></tr><br />
+        <br /><tr><td></td><td><input id = "button" type="submit" value="Generate" style="color:white" /></td></tr>
+        </table>
+    </form>
+    </div>
+    </body>
+</html>
